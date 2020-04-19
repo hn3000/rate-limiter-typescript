@@ -1,0 +1,19 @@
+{
+  "name": "rate-limiter-typescript",
+  "version": "0.1.0",
+  "description": "A simple rate-limiter, e.g. to protect APIs from being flooded.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "rate-limiting",
+    "rate limiting",
+    "token bucket"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
