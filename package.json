@@ -10,7 +10,7 @@
     "pretest": "npm run build",
     "test": "mocha --exit --recursive out/test/**/test-*.js",
     "precover": "npm run build",
-    "cover": "nyc --reporter=html --reporter=text npm test",
+    "cover": "nyc npm test",
     "dist": "tsc --outFile dist/index.js"
   },
   "keywords": [
