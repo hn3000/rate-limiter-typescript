@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "target": "ES5",
+    "lib": ["ES2016"],
+    "outDir": "out",
+    "sourceMap": true
+  },
+  "include": [ 
+    "src/**/*.ts", 
+    "test/**/*.ts" 
+  ]
+}

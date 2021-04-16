@@ -1,4 +1,7 @@
 out
 dist
+coverage
+node_modules
 .idea
 .vscode
+.nyc_output

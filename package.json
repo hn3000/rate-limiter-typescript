@@ -1,0 +1,36 @@
+{
+  "name": "rate-limiter-typescript",
+  "version": "0.1.0",
+  "description": "A simple rate-limiter, e.g. to protect APIs from being flooded.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "pretest": "npm run build",
+    "test": "mocha --exit --recursive out/test/**/test-*.js",
+    "precover": "npm run build",
+    "cover": "nyc npm test",
+    "dist": "tsc --outFile dist/index.js"
+  },
+  "keywords": [
+    "rate-limiting",
+    "rate limiting",
+    "token bucket"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1",
+    "typescript": "^3.8.3"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov", "text-summary"
+    ]
+  }
+}
